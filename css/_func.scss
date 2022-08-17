@@ -1,0 +1,4 @@
+@use "variables";
+@function px-to-vw($px) {
+   @return #{calc($px * 100 / variables.$maxWidth)} + vw;
+}
